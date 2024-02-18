@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+}
+#nav{
+    background-color: black;
+}
+
+li{
+    color: white;
+}
+
+#li-btn{
+    width: 17%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#main2{
+    padding: 1%;
+}
+
+#dropdown{
+    background-color: black;
+
+}
+
+#form{
+    display: flex;
+}
+
+
+
+@media screen and (max-width:990px){
+    #main{
+        display: block;
+        padding: 0% 2%;
+    }
+    #main3{
+        background-color: white;
+        width: 57px;
+        border-radius: 8px;
+
+    }
+    #nav-img{
+        width: 80%;
+    }
+}
+
+
+#li-btn:hover{
+    transform: scale(1.2);
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+
+
+
+
+#about{
+    height: 423px;
+    overflow: hidden;
+}
+
+#about-img{
+    width: 100%;
+    transform: scale(1.1);
+}
+
+
+#grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(25%,45%));
+    margin: 5% 5%;
+    grid-column-gap: 10%;
+}
+
+
+#about-me{
+    display: flex;
+    justify-content: center;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: clamp(2.5rem, 2.5vw, 5rem);
+    position: absolute;
+    width: 100%;
+    top: 27%;
+    animation: about-me 1.5s ease;
+}
+
+#david{
+    margin: 5% 0% 2% 10%;
+    color: gray;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#para1{
+    font-family: 'Hedvig Letters Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2% 0% 2% 10%;
+}
+
+#owner{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5% 2%;
+}
+
+#owner-img{
+    border-radius: 50%;
+}
+
+#para2{
+    width: 50%;
+    margin: 5% 2%;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+
+#grid2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10%,20%));
+    margin: 2% 2%;
+    padding-left: 4%;
+    margin-bottom: 5%;
+}
+
+#social{
+    margin: 2% 2%;
+    padding-left: 4%;
+}
+
+#social-li{
+    display: flex;
+    align-items: center;
+    height: 56%;
+    padding-left: 8%;
+    transition: background-color 0.5s ease-in;
+}
+/*                          footer css                                                             */
+
+
+#footer{
+    height: 33vh;
+    width: 100%;
+    background-color: black;
+    filter: contrast(0.5);
+}
+
+#footer-ele{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 38% 0% 38%;
+    padding: 3% 0%;
+    filter: invert(1);
+}
+
+#footer-h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}
+
+#footer-para{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+    padding: 1% 3rem;
+    padding: 1% 3rem 1% 3rem;
+    text-align: center;
+}
+
+#footer-logo{
+    transition: scale 200ms ease;
+    cursor: pointer;
+}
+
+#footer-logo:hover{
+    filter: brightness(0.5);
+    scale: 2;
+}
+
+
+                                /* media qurey */
+
+
+@media screen and (max-width:1100px){
+    #grid{
+        grid-template-columns: repeat(auto-fill, minmax(25%,70%));
+    }
+    #grid-item2{
+        padding: 0% 25%;
+    }
+    #para2{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:900px){
+    #grid{
+        grid-template-columns: repeat(auto-fill, minmax(25%,90%));
+    }
+}
+@media screen and (max-width:700px){
+    #grid{
+        grid-template-columns: repeat(auto-fill, minmax(25%,100%));
+    }
+    #about-img{
+        height: 100%;
+        width: auto;
+    }
+}
+
+@keyframes about-me {
+    0%{
+        opacity: 0%;
+        top: 37%;
+    }
+    100%{
+        opacity: 100%;
+        height: 27%;
+    }
+}
+
+
+                                /*   hover effects     */
+
+
+#social-li:hover{
+    color: white;
+    background-color: black;
+}

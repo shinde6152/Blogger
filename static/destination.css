@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+}
+#nav{
+    background-color: black;
+}
+
+li{
+    color: white;
+}
+
+#li-btn{
+    width: 17%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#main2{
+    padding: 1%;
+}
+
+#dropdown{
+    background-color: black;
+
+}
+
+#form{
+    display: flex;
+}
+
+
+
+@media screen and (max-width:990px){
+    #main{
+        display: block;
+        padding: 0% 2%;
+    }
+    #main3{
+        background-color: white;
+        width: 57px;
+        border-radius: 8px;
+
+    }
+    #nav-img{
+        width: 80%;
+    }
+}
+
+
+#li-btn:hover{
+    transform: scale(1.2);
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dest-img{
+    height: 61vh;
+}
+#destimg{
+    height: 100%;
+    width: 100%;
+    filter: brightness(1.3);
+}
+
+#country_heading{
+    margin: 6% 0% 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+#container{
+    margin: 2% 9%;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,279px));
+    grid-column-gap: 42px;
+    grid-row-gap: 52px;
+    grid-auto-rows: 237px;
+
+}
+
+#grid_item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+#grid_img{
+    height: 100%;
+    width: 100%;
+    transition: 200ms
+}
+
+#grid_h2{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 10px 5px 5px 5px black;
+
+}
+
+
+/*                          footer css                                                             */
+
+
+#footer{
+    height: 33vh;
+    width: 100%;
+    background-color: black;
+    filter: contrast(0.5);
+}
+
+#footer-ele{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 38% 0% 38%;
+    padding: 3% 0%;
+    filter: invert(1);
+}
+
+#footer-h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}
+
+#footer-para{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+    padding: 1% 3rem;
+    padding: 1% 3rem 1% 3rem;
+    text-align: center;
+}
+
+#footer-logo{
+    transition: scale 200ms ease;
+    cursor: pointer;
+}
+
+#footer-logo:hover{
+    filter: brightness(0.5);
+    scale: 2;
+}
+
+
+
+
+
+
+
+
+#grid_img:hover{
+
+    box-shadow: 7px 10px 54px -1px black;
+    animation-duration: 10s;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+
+    #destimg{
+        width: 100%;
+        height: 55%;
+    }
+
+    .dest-img{
+        height: 55%;
+    }
+
+}
+
+
